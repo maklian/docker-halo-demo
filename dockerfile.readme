@@ -17,17 +17,5 @@ wget https://packages.cloudpassage.com/debian/cphalo
 apt-get update
 apt-get update
 apt-get install cphalo
-/opt/cloudpassage/bin/configure --agent-key=5eb42703aaf007b796067c07bae787e6
+/opt/cloudpassage/bin/configure --agent-key=XXXXXXXXXXXX
 /etc/init.d/cphalod start
-
-application-membership-control - get access to github repo for this project
-
-can't install halo in coreos - one container per host, should be fine
-
-shy'd away from docker - hundreds of tiny containers - 100 agent instances on one OS instance, microservices - expensive
-
-so early in transition process, cost benefit for them
-
-cloudinit - configure base os for ECS host - EC2 image that dials into their container management system
-
-
